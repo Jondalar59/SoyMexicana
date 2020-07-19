@@ -6,7 +6,7 @@
 				<article>
 					<h2 class="titulo">Titulo: <a href="single.php?id=<?php echo $post['queja']; ?>"><?php echo $post['queja'] ?></a></h2>
 					<p class="fecha"><?php echo fecha($post['fecha']); ?></p>
-					<p class="extracto"><?php echo $post['estado'] ?></p>
+					<p class="extracto">Categoría: <?php echo $post['estudiante'] ?></p>
 					<a href="single.php?id=<?php echo $post['id']; ?>" class="continuar">Continuar Leyendo</a>
 				</article>
 			</div>

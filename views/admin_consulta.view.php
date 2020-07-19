@@ -30,7 +30,7 @@
 						<li>
 							<a href="https://www.facebook.com/TecNMCampusEscarcega"><i class="fa fa-facebook"></i></a>
 						</li>
-						<li><a href="<?php echo RUTA; ?>/login.php">Iniciar Sesion<i class="icono fa fa-lock"></i></a></li>
+						<li><a href="<?php echo RUTA; ?>/admin/cerrar.php">Cerrar Sesion<i class="icono fa fa-lock"></i></a></li>
 					</ul>
 				</nav>
 			</div>
@@ -51,7 +51,7 @@
 			<p class="extracto"><?php echo $post['estado'] ?></p>
 			<a href="editar.php?id=<?php echo $post['id']; ?>">Editar  </a>
 			<a href="../single.php?id=<?php echo $post['id']; ?>">Ver  </a>
-			<!--<a href="borrar.php?id=<?php echo $post['id']; ?>">Borrar</a>-->
+			
 	</article>
 	</section>
 	<?php endforeach; ?>
@@ -59,6 +59,6 @@
 
 <?php require '../paginacion.php'; ?>
 
-<a href="cerrar.php" class="btn ConsultaAlineacionDerecha">Cerrar Sesion</a>
+<!--<a href="cerrar.php" class="btn ConsultaAlineacionDerecha">Cerrar Sesion</a>-->
 
 <?php require '../views/footer.php'; ?>

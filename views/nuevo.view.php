@@ -1,28 +1,30 @@
 <?php require 'header.php' ?>
 
 	<div class="contenedor">
-		<div class="post">
+		<div class="post ConsultaMorado">
 			<article>
-			<h2 class="titulo">Nuevo caso de éxito</h2> 
+			<h2 class="titulo">Nuevo Tema en el Foro</h2> 
 				<br>
-				<h3>*Para validar su queja y/o sugerencia deberá requisitar algún 
-				dato que nos permita localizarle y darle respuesta, esta información es de carácter CONFIDENCIAL.</h3>
-				<h3>*Los campos  que no son rellandos, se tomaran como Anonimo.</h3>
+				<h3>*Registra un nuevo tema en el foro recuerda que solo se muestra tu nombre de usuario
+				y todos tus demas datos son confidenciales, no los compartas</h3>
+				
 				<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" enctype="multipart/form-data" class="formulario" method="post">
 				<br>
-				<h4>Nombre</h4>
-					<input type="text" name="nombre" placeholder="Nombre">
-				
+				<!---<h4>Nombre</h4>
+					<input type="text" name="nombre" placeholder="Nombre">-->
+				<h4>Titulo</h4> 
+				<input type="text" name="queja" placeholder="Añadir Titulo">
 				<h4>Categoria (Tipo de Violencia)</h4>
 				<select name="estudiante">
-						<option value="Psicológica/Emocional">Psicológica/Emocionala</option>
+						<option value="Psicológica/Emocional">Psicológica/Emocional</option>
 						<option value="Física">Física</option>
 						<option value="Patrimonial">Patrimonial</option>
 						<option value="Económica">Económica</option>
 						<option value="Sexual">Sexual</option>
 					</select>
-				<h4>Nota: Si en Estudiante su respuesta es SI favor rellenar los siguientes campos, si es No, solamente rellena los campos de Queja y Sugerencia </h4>
-				<br>
+				<!--<h4>Nota: Si en Estudiante su respuesta es SI favor rellenar los siguientes campos, si es No, solamente rellena los campos de Queja y Sugerencia </h4>-->
+
+				
 				<!---<h4>Telefono</h4>
 					<input type="text" name="telefono" placeholder="Telefono">
 				<h4>Matricula</h4>
@@ -63,8 +65,7 @@
 					</select>
 				<h4>Aula</h4>
 					<input type="text" name="aula" placeholder="Aula"> -->
-				<h4>Titulo</h4> 
-					<textarea name="queja" placeholder="Añadir Titulo"></textarea>
+				
 				<h4>Descripcion</h4>
 					<textarea name="sugerencia" placeholder="Escriba descripcion"></textarea>
 					
