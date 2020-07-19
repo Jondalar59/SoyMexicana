@@ -1,6 +1,6 @@
 <?php
 
-define('RUTA', 'http://localhost/foro');
+define('RUTA', 'http://localhost/SoyMexicana/');
 
 
 $bd_config = array(
