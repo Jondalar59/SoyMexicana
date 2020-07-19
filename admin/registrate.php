@@ -18,6 +18,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $usuario = filter_var(strtolower($_POST['usuario']), FILTER_SANITIZE_STRING);
     $password = $_POST['password'];
     $password2 = $_POST['password2'];
+    $nombre= $_POST['nombre'];
+    $apellido= $_POST['apellido'];
+    $email= $_POST['email'];
+    $direccion= $_POST['direccion'];
+    $curp= $_POST['curp'];
+
 
      //   echo "$usuario . $password . $password2";
 
@@ -50,8 +56,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             }
         }
             if ($errores == ''){
-                $statement =$conexion->prepare('INSERT INTO usuarios(id, usuario, pass) VALUES (null, :usuario, :pass)');
-                $statement->execute(array(':usuario' => $usuario, ':pass' => $password));
+                $statement =$conexion->prepare('INSERT INTO usuarios(id, usuario, pass, nombre, apellido, direccion, email, curp) VALUES (null, :usuario, :pass, :nombre, :apellido, :direccion, :email, :curp)');
+                $statement->execute(array(':usuario' => $usuario, ':pass' => $password, ':nombre' => $nombre, ':apellido' => $apellido, ':direccion' => $direccion, ':email' => $email, ':curp' => $curp));
 
                 header('Location: ' . RUTA . '/admin/consulta.php');
 
