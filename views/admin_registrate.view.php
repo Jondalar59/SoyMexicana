@@ -13,7 +13,7 @@
 	<header>
 		<div class="contenedor">
 			<div class="logo izquierda">
-				<p><a href="<?php echo RUTA; ?>">BUZÓN DIGITAL ITSE</a></p>
+				<p><a href="<?php echo RUTA; ?>">Soy Mexicana</a></p>
 			</div>
 
 			<div class="derecha">
@@ -30,7 +30,7 @@
 						<li>
 							<a href="https://www.facebook.com/TecNMCampusEscarcega"><i class="fa fa-facebook"></i></a>
 						</li>
-						<li><a href="<?php echo RUTA; ?>/login.php">Inisiar Sesion<i class="icono fa fa-lock"></i></a></li>
+						<li><a href="<?php echo RUTA; ?>/login.php">Iniciar Sesion<i class="icono fa fa-lock"></i></a></li>
 					</ul>
 				</nav>
 			</div>

@@ -3,7 +3,7 @@
 	<div class="contenedor">
 		<div class="post">
 			<article>
-			<h2 class="titulo">Nueva Queja o Sugerencia</h2> 
+			<h2 class="titulo">Nuevo caso de éxito</h2> 
 				<br>
 				<h3>*Para validar su queja y/o sugerencia deberá requisitar algún 
 				dato que nos permita localizarle y darle respuesta, esta información es de carácter CONFIDENCIAL.</h3>
@@ -12,18 +12,18 @@
 				<br>
 				<h4>Nombre</h4>
 					<input type="text" name="nombre" placeholder="Nombre">
-				<h4>Correo</h4>	
-					<input type="text" name="correo" placeholder="Correo">
-				<h4>Estudiante</h4>
+				
+				<h4>Categoria (Tipo de Violencia)</h4>
 				<select name="estudiante">
-						<option value="Anonimo">Seleccionar</option>
-						<option value="Anonimo">Anonimo</option>
-						<option value="Si">Si</option>
-						<option value="No">No</option>
+						<option value="Psicológica/Emocional">Psicológica/Emocionala</option>
+						<option value="Física">Física</option>
+						<option value="Patrimonial">Patrimonial</option>
+						<option value="Económica">Económica</option>
+						<option value="Sexual">Sexual</option>
 					</select>
 				<h4>Nota: Si en Estudiante su respuesta es SI favor rellenar los siguientes campos, si es No, solamente rellena los campos de Queja y Sugerencia </h4>
 				<br>
-				<h4>Telefono</h4>
+				<!---<h4>Telefono</h4>
 					<input type="text" name="telefono" placeholder="Telefono">
 				<h4>Matricula</h4>
 					<input type="text" name="n_control" placeholder="Matricula">
@@ -62,11 +62,11 @@
 						<option value="Vespertino">Vespertino</option>
 					</select>
 				<h4>Aula</h4>
-					<input type="text" name="aula" placeholder="Aula">
-				<h4>Queja</h4>
-					<textarea name="queja" placeholder="Queja"></textarea>
-				<h4>Sugerencia</h4>
-					<textarea name="sugerencia" placeholder="Sugerencia"></textarea>
+					<input type="text" name="aula" placeholder="Aula"> -->
+				<h4>Titulo</h4> 
+					<textarea name="queja" placeholder="Añadir Titulo"></textarea>
+				<h4>Descripcion</h4>
+					<textarea name="sugerencia" placeholder="Escriba descripcion"></textarea>
 					
 
 					<input type="submit" value="Crear">
