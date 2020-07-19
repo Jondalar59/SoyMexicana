@@ -13,7 +13,7 @@
 	<header>
 		<div class="contenedor">
 			<div class="logo izquierda">
-				<p><a href="<?php echo RUTA; ?>">BUZÓN DIGITAL ITSE</a></p>
+				<p><a href="<?php echo RUTA; ?>">Soy Mexicana</a></p>
 			</div>
 
 			<div class="derecha">
