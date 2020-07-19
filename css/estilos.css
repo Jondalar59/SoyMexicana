@@ -300,7 +300,7 @@ footer .copyright {
 .formulario input[type="submit"]{
 	padding: 15px;
 	background: #BB1F35;
-	color:#000;
+	color:#fff;
 	font-size: 1em;
 	font-family: Arial, sans-serif, helvetica;
 	border-radius: 2px;
@@ -356,4 +356,48 @@ img {
 
   .ConsultaMorado{
 	background: #9A35C8;
+  }
+
+  /*------single view -----*/
+  .TamañoTexArea{
+	width: 800px;
+	height: 80px;
+	border-radius: 5px;
+	border: 1px solid red;
+	transition: all .5s;
+	margin-bottom: 20px;
+  }
+
+  aside textarea:focus{
+	  width:950px !important;
+	  height: 100px;
+  }
+
+  .buttonSmall{
+	background-color: #c428aa;
+	border: none;
+	display: center;
+	color: #fff;
+	width: 200px;
+	height: 40px;
+	text-align: center;
+	text-decoration:none;
+	font-size: 16px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	cursor: pointer;
+  }
+
+  .buttonSee{
+	background-color: #c428aa;
+	border: none;
+	display: center;
+	color: #fff;
+	width: 200px;
+	height: 40px;
+	text-align: center;
+	text-decoration:none;
+	font-size: 16px;
+	margin-bottom: 20px;
+	cursor: pointer;
   }

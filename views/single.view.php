@@ -1,3 +1,4 @@
+
 <?php require 'header.php' ?>
 
 	<div class="contenedor">
@@ -15,15 +16,28 @@
 		</section>
 	</div>
 
+	<script>
+
+	$(document).ready(function(){
+		$("#mostrar").click(function(event){
+			$("form").toggle(500);
+		});
+
+	});
+	
+		</script>
+
 	<aside class="contenedor">
-
+		<h2 style="	margin-bottom: 20px;">Comentarios del Tema</h2>
 		<form action="http://localhost/SoyMexicana/admin/comentario.php?id=<?php echo $_GET["id"]; ?>" method="POST">
-		<textarea name="comentario" placeholder="Comentario"></textarea>
-		
-		<input type="submit" value="Comentar">
-
-
+		<textarea name="comentario" placeholder="Comentario..." class="TamañoTexArea" ></textarea>
+		<input type="submit" value="Comentar" class="buttonSmall">
 		</form>
 	</aside>
-
-<?php require 'footer.php'; ?>
+	
+	<aside class="contenedor">
+		<form action="http://localhost/SoyMexicana/admin/vercomentario1.php?id=<?php echo $_GET["id"]; ?>" method="POST">
+			<input type="submit" value="vercomentarios" class="buttonSmall">
+		</form>
+	</aside>
+	

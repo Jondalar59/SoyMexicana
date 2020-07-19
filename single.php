@@ -26,4 +26,6 @@ $post = $post[0];
 
 require 'views/single.view.php';
 
+
+require 'views/footer.php';
 ?>
