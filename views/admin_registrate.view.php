@@ -38,19 +38,28 @@
 		</div>
     </header>
     <div class="contenedor">
-		<div class="post">
+		<div class="post ConsultaMorado">
 			<article>
-				<h2 class="titulo">Nueva Administrador</h2>
+				<h2 class="titulo">Nuevo Usuario</h2>
 				<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" enctype="multipart/form-data" class="formulario" method="post">
 				<h4>Usuario</h4>
 				    <input type="text" name="usuario" class="usuario" placeholder="Usuario">
 				<h4>Contraseña</h4>	
-                    <input type="password" name="password" class="password" placeholder="Contraseña">
-                <h4>Repite la Contraseña</h4>
-                    <input type="password" name="password2" class="password_btn" placeholder="Repetir Contraseña">
-                <input type="submit" value="Crear">
-			
-
+                    			<input type="password" name="password" class="password" placeholder="Contraseña">
+                		<h4>Repite la Contraseña</h4>
+                    			<input type="password" name="password2" class="password_btn" placeholder="Repetir Contraseña">
+                		<h4>Nombre</h4>
+					<input type="text" name="nombre" class="nombre" placeholder="nombre">
+				<h4>Apellido</h4>
+				   <input type="text" name="apellido" class="apellido" placeholder="apellido">
+				<h4>Direccion</h4>
+				   <input type="text" name="direccion" class="direccion" placeholder="direccion">
+				<h4>Corre Electronico</h4>
+				   <input type="text" name="email" class="email" placeholder="email">
+				<h4>CURP</h4>
+				   <input type="text" name="curp" class="curp" placeholder="curp">
+				
+				   <input type="submit" value="Crear">
             <?php if(!empty($errores)): ?>
                 <div class="error">
                     <ul>

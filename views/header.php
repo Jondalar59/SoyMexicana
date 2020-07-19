@@ -27,6 +27,7 @@
 							<a href="#"><i class="fa fa-facebook"></i></a>
 						</li>
 						<li><a href="<?php echo RUTA; ?>/login.php">Iniciar Sesion<i class="icono fa fa-lock"></i></a></li>
+						<li><a href="<?php echo RUTA; ?>/admin/registrate.php">Registro<i class="icono fa fa-lock"></i></a></li>
 					</ul>
 				</nav>
 			</div>

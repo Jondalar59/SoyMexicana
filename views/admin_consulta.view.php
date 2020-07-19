@@ -41,8 +41,8 @@
 	<h2>PANEL DE CONTROL</h2>
 	<h2><?php if (isset($_SESSION['usuario'])) { echo " Hola " . $_SESSION['usuario'];} else{ echo "";} ?></h2>
 	<br>
-	<a href="registrate.php" class="btn">Registrar Nuevo Administrador</a>
-	<a href="cerrar.php" class="btn">Cerrar Sesion</a>
+	<!--<a href="registrate.php" class="btn">Registrar Nuevo Administrador</a>-->
+	
 
 	<?php foreach($posts as $post): ?>
 	<section class="post">
@@ -51,12 +51,14 @@
 			<p class="extracto"><?php echo $post['estado'] ?></p>
 			<a href="editar.php?id=<?php echo $post['id']; ?>">Editar  </a>
 			<a href="../single.php?id=<?php echo $post['id']; ?>">Ver  </a>
-			<a href="borrar.php?id=<?php echo $post['id']; ?>">Borrar</a>
+			<!--<a href="borrar.php?id=<?php echo $post['id']; ?>">Borrar</a>-->
 	</article>
 	</section>
 	<?php endforeach; ?>
 </div>
 
 <?php require '../paginacion.php'; ?>
+
+<a href="cerrar.php" class="btn ConsultaAlineacionDerecha">Cerrar Sesion</a>
 
 <?php require '../views/footer.php'; ?>
