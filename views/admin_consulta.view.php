@@ -38,7 +38,7 @@
 		</div>
 	</header>
 <div class="contenedor">
-	<h2>PANEL DE CONTROL</h2>
+	
 	<h2><?php if (isset($_SESSION['usuario'])) { echo " Hola " . $_SESSION['usuario'];} else{ echo "";} ?></h2>
 	<br>
 	<!--<a href="registrate.php" class="btn">Registrar Nuevo Administrador</a>-->
@@ -47,10 +47,10 @@
 	<?php foreach($posts as $post): ?>
 	<section class="post">
 	<article>
-			<h2 class="titulo">Folio: <a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['id'] ?></a></h2>
-			<p class="extracto"><?php echo $post['estado'] ?></p>
-			<a href="editar.php?id=<?php echo $post['id']; ?>">Editar  </a>
-			<a href="../single.php?id=<?php echo $post['id']; ?>">Ver  </a>
+	<h2 class="titulo">Titulo: <a href="single.php?id=<?php echo $post['queja']; ?>"><?php echo $post['queja'] ?></a></h2>
+					<p class="fecha"><?php echo fecha($post['fecha']); ?></p>
+					<p class="extracto">Categoría: <?php echo $post['estudiante'] ?></p>
+					<a href="../single.php?id=<?php echo $post['id']; ?>" class="continuar">Continuar Leyendo</a>
 			
 	</article>
 	</section>
