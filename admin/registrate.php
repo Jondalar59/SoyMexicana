@@ -7,7 +7,7 @@ require '../functions.php';
 $conexion = conexion($bd_config);
 
 // Comprobamos si la session esta iniciada, sino, redirigimos.
-comprobarSession();
+//comprobarSession();
 
 
 if (!$conexion) {

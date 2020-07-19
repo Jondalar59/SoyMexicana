@@ -4,7 +4,7 @@ define('RUTA', 'http://localhost/foro');
 
 
 $bd_config = array(
-	'basedatos' => 'buzon',
+	'basedatos' => 'foro',
 	'usuario' => 'root',
 	'pass' => ''
 );
