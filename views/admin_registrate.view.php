@@ -45,10 +45,10 @@
 				<h4>Usuario</h4>
 				    <input type="text" name="usuario" class="usuario" placeholder="Usuario">
 				<h4>Contraseña</h4>	
-                    <input type="password" name="password" class="password" placeholder="Contraseña">
-                <h4>Repite la Contraseña</h4>
-                    <input type="password" name="password2" class="password_btn" placeholder="Repetir Contraseña">
-                <h4>Nombre</h4>
+                    			<input type="password" name="password" class="password" placeholder="Contraseña">
+                		<h4>Repite la Contraseña</h4>
+                    			<input type="password" name="password2" class="password_btn" placeholder="Repetir Contraseña">
+                		<h4>Nombre</h4>
 					<input type="text" name="nombre" class="nombre" placeholder="nombre">
 				<h4>Apellido</h4>
 				   <input type="text" name="apellido" class="apellido" placeholder="apellido">
